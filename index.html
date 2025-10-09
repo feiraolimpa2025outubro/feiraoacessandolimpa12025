@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Universo Hoje - Explore o Cosmos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ===== ESTILO GLOBAL ===== */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a { color: #0a0a23; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== CABEÇALHO ===== */
+    header {
+      background: linear-gradient(120deg, #0a0a23, #1a1a50);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter {
+      background: #fff;
+      padding: 40px 20px;
+      margin-top: -30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .newsletter h2 {
+      color: #0a0a23;
+      margin-bottom: 15px;
+    }
+
+    .newsletter form {
+      margin-top: 15px;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 12px 15px;
+      width: 60%;
+      max-width: 320px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .newsletter button {
+      padding: 12px 20px;
+      background: #0a0a23;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      margin-left: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .newsletter button:hover {
+      background: #1c1c4d;
+    }
+
+    /* ===== POSTS ===== */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0a0a23;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #eee;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .post h3 {
+      margin-top: 0;
+      color: #1a1a50;
+      font-size: 1.2em;
+    }
+
+    .post p {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    /* ===== RODAPÉ ===== */
+    footer {
+      background: #0a0a23;
+      color: #ddd;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      color: #fff;
+      margin-top: 25px;
+      font-size: 1.1em;
+    }
+
+    footer nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer nav ul li {
+      display: inline-block;
+      margin: 5px 10px;
+    }
+
+    footer nav ul li a {
+      color: #ddd;
+      font-size: 0.95em;
+    }
+
+    footer nav ul li a:hover {
+      color: #fff;
+    }
+
+    footer p, footer a {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>🌌 Universo Hoje</h1>
+    <p>Explore o cosmos e descubra o que há além das estrelas.</p>
+  </header>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Inscreva-se para receber novidades do espaço</h2>
+    <form>
+      <input type="email" placeholder="Digite seu melhor e-mail" required>
+      <button type="submit">INSCREVER</button>
+    </form>
+    <p>Receba conteúdos exclusivos sobre astronomia, ciência e exploração espacial diretamente no seu e-mail.</p>
+  </section>
+
+  <!-- ARTIGOS -->
+  <section>
+    <h2>Artigos em Destaque</h2>
+    <div class="posts">
+      <div class="post">
+        <h3>🌍 O planeta que pode abrigar vida</h3>
+        <p><strong>Categoria A • Planetas</strong></p>
+        <p>Pesquisadores encontraram um exoplaneta na zona habitável — com condições parecidas às da Terra. Saiba mais sobre essa descoberta incrível.</p>
+      </div>
+
+      <div class="post">
+        <h3>🕳️ O que é um buraco negro?</h3>
+        <p><strong>Categoria B • Astrofísica</strong></p>
+        <p>Esses gigantes misteriosos têm uma gravidade tão forte que deformam o próprio tecido do espaço-tempo.</p>
+      </div>
+
+      <div class="post">
+        <h3>✨ As constelações mais famosas</h3>
+        <p><strong>Categoria C • Astronomia</strong></p>
+        <p>Orion, Cruzeiro do Sul, Escorpião... conheça suas histórias, mitos e como identificá-las no céu noturno.</p>
+      </div>
+
+      <div class="post">
+        <h3>🚀 A nova corrida espacial</h3>
+        <p><strong>Categoria D • Exploração</strong></p>
+        <p>Empresas e agências disputam a liderança na exploração de Marte. Veja quem está na frente dessa jornada cósmica.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:30px;">
+      <a href="#">👉 Ver todos os artigos</a>
+    </p>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <h3>LINKS RÁPIDOS</h3>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <h3>CATEGORIAS</h3>
+    <p>Planetas • Astrofísica • Astronomia • Exploração</p>
+
+    <h3>REDES SOCIAIS</h3>
+    <p>
+      <a href="#">Facebook</a> •
+      <a href="#">Instagram</a> •
+      <a href="#">YouTube</a> •
+      <a href="#">Twitter</a>
+    </p>
+
+    <h3>SOBRE</h3>
+    <p>O Universo Hoje é um portal criado para inspirar curiosidade e conhecimento sobre o espaço sideral, trazendo fatos, descobertas e mistérios do cosmos.</p>
+
+    <p>© 2025 Universo Hoje • <a href="#">Política de Privacidade</a> • <a href="#">Termos de Uso</a></p>
+  </footer>
+
+</body>
+</html>
